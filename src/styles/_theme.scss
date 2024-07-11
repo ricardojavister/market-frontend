@@ -1,0 +1,69 @@
+$primary: #343c9f;
+$primary-content: #dee0f4;
+$primary-dark: #272d79;
+$primary-light: #444ec2;
+
+$secondary: #699f34;
+$secondary-content: #000000;
+$secondary-dark: #507927;
+$secondary-light: #82c244;
+
+$background: #f0f0f0;
+$foreground: #fbfbfb;
+$border: #dfdfdf;
+
+$copy: #262626;
+$copy-light: #666666;
+$copy-lighter: #8c8c8c;
+
+$success: #349f34;
+$warning: #9f9f34;
+$error: #9f3434;
+$success-content: #def4de;
+$warning-content: #000000;
+$error-content: #f4dede;
+
+html[data-theme="light"] {
+  --primary: #{$primary};
+  --primary-content: #{$primary-content};
+  --primary-dark: #{$primary-dark};
+  --primary-light: #{$primary-light};
+  --secondary: #{$secondary};
+  --secondary-content: #{$secondary-content};
+  --secondary-dark: #{$secondary-dark};
+  --secondary-light: #{$secondary-light};
+  --background: #{$background};
+  --foreground: #{$copy};
+  --border: #{$border};
+  --copy: #{$copy};
+  --copy-light: #{$copy-lighter};
+  --copy-lighter: #{$copy-lighter};
+  --success-content: #{$success-content};
+  --warning-content: #{$warning-content};
+  --error-content: #{$error-content};
+  --box-background:#{$foreground};
+  --box-color-text:#{$copy};
+  --box-color-border:#{$secondary-content};
+}
+
+html[data-theme="dark"] {
+  --primary: #{$primary};
+  --primary-content: #{$primary-content};
+  --primary-dark: #{$primary-dark};
+  --primary-light: #{$primary-light};
+  --secondary: #{$secondary};
+  --secondary-content: #{$secondary-content};
+  --secondary-dark: #{$secondary-dark};
+  --secondary-light: #{$secondary-light};
+  --background: #{$copy};
+  --foreground: #{$foreground};
+  --border: #{$border};
+  --copy: #{$copy};
+  --copy-light: #{$copy-light};
+  --copy-lighter: #{$copy-lighter};
+  --success-content: #{$success-content};
+  --warning-content: #{$warning-content};
+  --error-content: #{$error-content};
+  --box-background:#{$copy};
+  --box-color-border:#{$foreground};
+}

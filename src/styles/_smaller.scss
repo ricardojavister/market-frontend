@@ -1,0 +1,185 @@
+@import "variables";
+
+@media only screen and (min-width: $smaller) {
+  body {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+
+    .container {
+      display: grid;
+      width: 100%;
+      height: 100vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: 5rem minmax(auto, auto) 3rem;
+      grid-template-areas:
+        "header"
+        "app-root"
+        "footer";
+      row-gap: 0.6rem;
+      max-width: 1300px;
+
+      header {
+        grid-area: header;
+        background-color: var(--primary);
+        display: flex;
+        nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+
+          .app {
+            color: var(--foreground);
+            font-size: 1.5rem;
+          }
+
+          .logo {
+            display: flex !important;
+            padding: 0.5rem;
+            svg {
+              width: 3rem;
+              height: 3rem;
+              stroke: var(--foreground);
+            }
+          }
+
+          .menu {
+            display: flex !important;
+            padding: 0.5rem;
+            .img-container {
+              width: 3rem;
+              height: 3rem;
+            }
+          }
+        }
+      }
+
+      app-root {
+        grid-area: app-root;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        app-home {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          .search {
+            display: flex;
+            width: 100%;
+            form {
+              display: flex;
+              width: 100%;
+              .search-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 0 1rem 0 1rem;
+
+                .search-text {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 80%;
+
+                  input {
+                    padding-left: 1rem;
+                    width: 100%;
+                    height: 3rem;
+                  }
+                }
+                .search-icon {
+                  display: flex;
+                  cursor: pointer;
+                  background-color: var(--primary);
+                  justify-content: center;
+                  align-items: center;
+                  height: 3rem;
+                  width: 20%;
+                  button {
+                    border: none !important;
+                    background-color: transparent !important;
+                    svg {
+                      height: 2.4rem;
+                      width: 2.4rem;
+                      stroke: var(--primary-content);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          app-content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .content {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+
+              .card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+                  rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                padding: 0.1rem;
+                margin: 0.4rem;
+
+                .brand-container {
+                  display: flex;
+                  justify-content: left;
+                  align-items: flex-start;
+                  width: 4rem;
+                }
+                .product-container {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: row;
+                  .image-container {
+                    display: flex;
+                    width: 30%;
+                  }
+
+                  .name-container {
+                    display: flex;
+                    padding: 0.3rem;
+                    width: 50%;
+                  }
+
+                  .price-container {
+                    display: flex;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      footer {
+        grid-area: footer;
+        background-color: var(--primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          color: var(--foreground);
+          a {
+            color: var(--foreground);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

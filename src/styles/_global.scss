@@ -1,0 +1,10 @@
+.img-responsive {
+  width: 100%;
+  height: auto !important;
+}
+
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 0.1rem solid var(--copy-light);
+}

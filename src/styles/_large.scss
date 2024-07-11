@@ -1,0 +1,25 @@
+@import "variables";
+
+@media only screen and (min-width: $large) {
+  body {
+    .container {
+      app-root {
+        app-home {
+          app-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            .content {
+              flex-direction: row;
+              width: 23%;
+              .card {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

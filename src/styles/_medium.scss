@@ -1,0 +1,36 @@
+@import "variables";
+
+@media only screen and (min-width: $medium) {
+  body {
+    .container {
+      app-root {
+        app-home {
+          app-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            .content {
+              flex-direction: row;
+              width: 31%;
+              .card {
+                width: 100%;
+                .product-container {
+                  flex-direction: column;
+                  .image-container {
+                    width: 30%;
+                  }
+
+                  .name-container {
+                    width: 100%;
+                    justify-content: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

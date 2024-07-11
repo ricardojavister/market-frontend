@@ -1,0 +1,45 @@
+@import "variables";
+
+@media only screen and (min-width: $small) {
+  body {
+    .container {
+      app-root {
+        app-home {
+          app-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            .content {
+              flex-direction: row;
+              width: 46%;
+              .card {
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+
+                .brand-container {
+                  display: flex;
+                  justify-content: left;
+                  align-items: flex-start;
+                  width: 4rem;
+                }
+                .product-container {
+                  flex-direction: column;
+                  .image-container {
+                    width: 30%;
+                  }
+
+                  .name-container {
+                    width: 100%;
+                    justify-content: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

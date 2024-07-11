@@ -1,0 +1,35 @@
+:root {
+    --border-radius: 10px;
+    --font-family: "Inter", sans-serif;
+    --color-primary: #00d0ff;
+    --color-secondary:#ff8400;
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    --color-border:#dddee2; 
+    --color-font:#ffffff;
+    --tw-text-opacity:1;
+    --color-font: rgb(229 231 235 / var(--tw-text-opacity));
+    --min-height-row: 100px;
+    --max-height-row: 300px;
+    --duration:42s;
+    --delay:0s;
+    --iteration-count:infinite;
+    --play:running;
+    --delay:0s;
+    --direction:normal;
+    --margin-top: 10px;
+    --margin-bottom: 10px;
+    --margin-left: 10px;
+    --margin-right: 10px;
+    --margin-min:5px;
+    --margin:10px;
+    --margin-end:15px;
+    --box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+
+  /*breakpoints*/
+  $smaller:320px;
+  $small:480px;
+  $medium:768px;
+  $large:1024px;
+  $extra-large:1200px;

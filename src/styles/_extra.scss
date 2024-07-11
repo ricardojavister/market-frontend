@@ -1,0 +1,30 @@
+@import "variables";
+
+@media only screen and (min-width: $large) {
+  body {
+    .container {
+      app-root {
+        app-home {
+          app-content {
+            .content {
+              .card {
+                width: 31%;
+                .product-container {
+                  flex-direction: column;
+                  .image-container {
+                    width: 30%;
+                  }
+
+                  .name-container {
+                    width: 100%;
+                    justify-content: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
